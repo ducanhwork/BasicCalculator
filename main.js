@@ -35,6 +35,18 @@ document.querySelector(".reset").onclick = function () {
     monitorResult.innerText = "";
   }
 };
+
+//set animation
+setInterval(()=>{
+  document.querySelector('span').classList.toggle('hidden');
+},300)
+
+setInterval(()=>{
+  document.querySelector('p.trademark').classList.toggle('red');
+},500);
+setInterval(()=>{
+  document.querySelector('a.trademark').classList.toggle('red');
+},500);
 Object.assign(monitorInput.style, {
   heigth: "50%",
   color: "black",
